@@ -1,4 +1,5 @@
 1. How To Run (requirement python 3.10+
+
 git clone
 cd SEEK - Techical Assessment
 
@@ -9,10 +10,13 @@ pip install -r requirement.txt
 
 uvicorn app.main:app --reload
 
+open browser and search 127.0.0.1:8000/docs or localhost:8000/docs
+
 2. Design Overview
+
 HTTP request -> endpoint -> service -> crud -> store -> store -> crud -> service -> endpoint -> HTTP Response
 
-3. Assumption
+4. Assumption
 - no authentication
 - no frontend
 - in-memory storage
